@@ -201,9 +201,9 @@ abstract class JsonClass {
 
     if (value is String) {
       try {
-        value = json.decode(value);
+        result = json.decode(value);
       } catch (e) {
-        value = defaultValue ?? value;
+        result = defaultValue ?? value;
       }
     }
 
